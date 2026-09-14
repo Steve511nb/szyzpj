@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#050505" />
+  <title>宋致远 · 个人作品集</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video id="bgVideo" class="bg-video" autoplay muted loop playsinline preload="auto">
+    <source src="../assets/ambient-loop.mp4" type="video/mp4" />
+  </video>
+  <div class="bg-shade"></div>
+  <div class="grain"></div>
+
+  <header class="nav-shell">
+    <nav class="nav">
+      <a class="brand" href="#about">宋致远</a>
+      <div class="nav-links">
+        <a href="#about">关于我</a>
+        <a href="#awards">我的奖项</a>
+        <a href="#news">部队新闻</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page hero" id="about">
+      <div class="section-kicker">Portfolio</div>
+      <h1>关于我</h1>
+      <div class="about-card glass reveal">
+        <img src="assets/about.webp" alt="宋致远个人模卡" />
+      </div>
+      <p class="intro reveal intro-indent">
+        打铁还需自身硬，拥有官方媒体、部队宣传、商业短剧、自媒体爆款创作多重实战经验。
+        兼具军人极强的执行力、责任心与影视创作者的审美创意，擅长高燃影视质感内容制作，
+        能够独立完成从策划、拍摄、特效、建模到成片交付的全流程工作。
+      </p>
+      <a class="scroll-hint" href="#awards" aria-label="前往我的奖项">↓</a>
+    </section>
+
+    <section class="page" id="awards">
+      <div class="section-kicker">Recognition</div>
+      <h2>我的奖项</h2>
+      <p class="section-subtitle">奖项与专业能力认证。卡片自动翻页，点击任意卡片可暂停并放大查看。</p>
+
+      <div class="award-stage reveal">
+        <button class="arrow prev" id="awardPrev" aria-label="上一张">‹</button>
+        <div class="award-carousel" id="awardCarousel" aria-live="polite">
+          <button class="award-card" data-index="0">
+            <img src="assets/award1.jpg" alt="奖项展示一" />
+          </button>
+          <button class="award-card" data-index="1">
+            <img src="assets/award2.jpg" alt="奖项展示二" />
+          </button>
+          <button class="award-card" data-index="2">
+            <img src="assets/award3.jpg" alt="奖项展示三" />
+          </button>
+        </div>
+        <button class="arrow next" id="awardNext" aria-label="下一张">›</button>
+      </div>
+      <div class="dots" id="awardDots" aria-label="奖项页码"></div>
+    </section>
+
+    <section class="page news-page" id="news">
+      <div class="section-kicker">Editorial Work</div>
+      <h2>我在部队刊登的新闻</h2>
+      <p class="section-subtitle">公众号长图与报纸版面，以移动端阅读和纸媒翻阅两种方式呈现。</p>
+
+      <div class="news-grid">
+        <article class="showcase glass reveal tv-showcase">
+          <div class="showcase-head">
+            <div>
+              <span class="mini-label">电视新闻作品</span>
+              <h3>电视屏幕视图</h3>
+            </div>
+            <span class="gesture">左右滑动</span>
+          </div>
+
+          <div class="tv-shell">
+            <div class="tv-bezel">
+              <div class="tv-screen">
+                <div class="tv-track slider-track" id="tvTrack">
+                  <div class="slide"><img src="assets/tv1.webp" alt="电视新闻作品一"></div>
+                  <div class="slide"><img src="assets/tv2.webp" alt="电视新闻作品二"></div>
+                  <div class="slide"><img src="assets/tv3.webp" alt="电视新闻作品三"></div>
+                </div>
+              </div>
+              <div class="tv-status"></div>
+            </div>
+            <div class="tv-stand"></div>
+          </div>
+
+          <div class="slider-controls">
+            <button data-slider="tv" data-dir="-1" aria-label="电视新闻上一张">‹</button>
+            <span id="tvCounter" class="page-counter" aria-live="polite">1 / 3</span>
+            <button data-slider="tv" data-dir="1" aria-label="电视新闻下一张">›</button>
+          </div>
+        </article>
+
+<article class="showcase glass reveal">
+          <div class="showcase-head">
+            <div>
+              <span class="mini-label">公众号作品</span>
+              <h3>手机阅读视图</h3>
+            </div>
+            <span class="gesture">左右滑动</span>
+          </div>
+
+          <div class="phone-wrap">
+            <div class="phone">
+              <div class="phone-island"></div>
+              <div class="phone-screen">
+                <div class="mobile-track slider-track" id="wechatTrack">
+                  <div class="slide"><img src="assets/wechat-full-1.webp" alt="公众号作品一"></div>
+                  <div class="slide"><img src="assets/wechat-full-2.webp" alt="公众号作品二"></div>
+                  <div class="slide"><img src="assets/wechat-full-3.webp" alt="公众号作品三"></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-controls">
+              <button data-slider="wechat" data-dir="-1" aria-label="公众号上一张">‹</button>
+              <span id="wechatCounter">1 / 3</span>
+              <button data-slider="wechat" data-dir="1" aria-label="公众号下一张">›</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="showcase glass reveal">
+          <div class="showcase-head">
+            <div>
+              <span class="mini-label">报纸作品</span>
+              <h3>纸媒版面视图</h3>
+            </div>
+            <span class="gesture">左右滑动</span>
+          </div>
+
+          <div class="paper-frame">
+            <div class="paper-track slider-track" id="paperTrack">
+              <div class="slide"><img src="assets/paper1.webp" alt="报纸作品一"></div>
+              <div class="slide"><img src="assets/paper2.webp" alt="报纸作品二"></div>
+              <div class="slide"><img src="assets/paper3.webp" alt="报纸作品三"></div>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button data-slider="paper" data-dir="-1" aria-label="报纸上一张">‹</button>
+            <span id="paperCounter">1 / 3</span>
+            <button data-slider="paper" data-dir="1" aria-label="报纸下一张">›</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="lightboxClose" aria-label="关闭">×</button>
+    <img id="lightboxImage" alt="放大奖项图片" />
+    <div class="lightbox-tip">点击关闭后继续自动播放</div>
+  </div>
+
+  <footer>
+    <span>宋致远 · Portfolio</span>
+    <span>策划 · 拍摄 · 特效 · 建模 · 后期</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
